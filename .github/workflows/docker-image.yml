@@ -20,7 +20,7 @@ jobs:
     - name: Build and publish image
       uses: elgohr/Publish-Docker-Github-Action@v5
       with:
-          name: junlinwu/AIstudioProxyAPI # dockerid/imageName
+          name: junlinwu/AISPAPI # dockerid/imageName
           platforms: linux/arm64,linux/amd64
           tags: latest
           username: ${{ secrets.DOCKERHUB_USERNAME }} # docker hub userid 在setting创建secrets name=DOCKER_USERNAME  value=dockerid
